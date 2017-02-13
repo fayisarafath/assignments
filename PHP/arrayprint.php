@@ -1,12 +1,7 @@
 <?php
-$details = array
-  (
-  array("Fayis",21,70),
-  array("Jayaram",24,90),
-  array("pyaree",20,80)
-  );
-  
-echo "NAME:".$details[0][0].": 	&nbsp AGE: ".$details[0][1]."&nbsp MARKS: ".$details[0][2].".<br>";
-echo "NAME:".$details[1][0].": 	&nbsp AGE: ".$details[1][1]."&nbsp MARKS: ".$details[1][2].".<br>";
-echo "NAME:".$details[2][0].": 	&nbsp AGE: ".$details[2][1]."&nbsp MARKS: ".$details[2][2].".<br>";
+$age = array("Fayis"=> 21,"Jayaram"=>24,"Pyaree"=>20");
+$mark = array("Fayis"=> 80,"Jayaram"=>90,"Pyaree"=>70");
+echo "NAME:Fayis".": &nbsp AGE: ".$age['Fayis']."&nbsp MARKS: ".$mark['Fayis'].".<br>";
+echo "NAME:Jayaram".": &nbsp AGE: ".$age['Jayaram']."&nbsp MARKS: ".$mark['Jayaram'].".<br>";
+echo "NAME:Pyaree".": &nbsp AGE: ".$age['Pyaree']."&nbsp MARKS: ".$mark['Pyaree'].".<br>";
 ?>
