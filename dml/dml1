@@ -1,0 +1,30 @@
+create database items;
+use items;
+
+;
+
+
+INSERT INTO  `items`.`stock` (
+`stock_id` ,
+`stock_name` ,
+`stock_quantity` ,
+`stock_price` ,
+`stock_supplier`
+)
+VALUES 
+('101',  'Printer',  '15',  '5000',  '5'), 
+('102',  'Mouse',  '20',  '900',  '4'),
+('103',  'Modem',  '15',  '800',  '5'), 
+('104',  'HDD',  '20',  '9000',  '4'),
+('105',  'Headphones',  '15',  '3000',  '5');
+
+mysql> select *from stock;
++----------+------------+----------------+-------------+----------------+
+| stock_id | stock_name | stock_quantity | stock_price | stock_supplier |
++----------+------------+----------------+-------------+----------------+
+|      101 | Printer    |             15 |        5000 |              5 |
+|      102 | Mouse      |             20 |         900 |              4 |
+|      103 | Modem      |             15 |         800 |              5 |
+|      104 | HDD        |             20 |        9000 |              4 |
+|      105 | Headphones |             15 |        3000 |              5 |
++----------+------------+----------------+-------------+----------------+
